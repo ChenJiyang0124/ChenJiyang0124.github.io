@@ -17,7 +17,7 @@
 
 
     <title>博客搭建过程（草稿1） | 扬</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" href="/sheep.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/sheep.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">扬</span>
                 </a>
@@ -64,33 +64,54 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/tags" class="waves-effect waves-light">
+    <a href="" class="waves-effect waves-light">
+
       
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      <i class="fas fa-search" style="zoom: 0.6;"></i>
       
-      <span>标签</span>
+      <span>search</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/search/tags">
+          
+          <i class="fas fa-tags" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>标签</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/search/categories">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>分类</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/archives">
+          
+          <i class="fas fa-" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>发布日期</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/categories" class="waves-effect waves-light">
+    <a href="/System" class="waves-effect waves-light">
       
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      <i class="/icon/系统.png" style="zoom: 0.6;"></i>
       
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
+      <span>System</span>
     </a>
     
   </li>
@@ -140,7 +161,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/sheep.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">扬</div>
         <div class="logo-desc">
@@ -167,33 +188,56 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/tags" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fas fa-tags"></i>
+				<i class="fa-fw fas fa-search"></i>
 			
-			标签
+			search
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/search/tags " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tags" style="position: absolute;left:50px" ></i>
+			      
+		          <span>标签</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/search/categories " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>分类</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/archives " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-" style="position: absolute;left:50px" ></i>
+			      
+		          <span>发布日期</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
         <li class="m-nav-item">
 	  
-		<a href="/categories" class="waves-effect waves-light">
+		<a href="/System" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+			    <i class="fa-fw /icon/系统.png"></i>
 			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
+			System
 		</a>
           
         </li>
@@ -310,7 +354,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/%5C0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/%5Cmedias%5CArticle-picture%5Ctext1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -473,8 +517,7 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>img和coverimg有问题</p>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>建立一个属于自己的博客只需两步，博客框架+GitHub或服务器部署。并且搭建部署只需一次操作，后续工作基本就是优化网站内容<br><strong>搭建博客框架</strong><br>博客框架犹如一个仓库，一间房子，里面存放着知识和想法。在搭建完博客框架之后，后续的工作就是装修网站与添加知识。与其说搭建不如说下载，因为已经有很多优质的框架，只要下载即可，例如本文使用的hexo框架。<br><strong>部署</strong><br>如果博客网站未部署，则只能在本地上查看（如果把博客当成私人笔记本也可以不部署）。部署如同给仓库一个访问地址，可以在任意联网设备上访问。一般部署在GitHub上，因为不用钱呗。<br><strong>博客优化</strong><br>完成前面两步，剩下的工作就是对网站的个性化修改，以及添加内容。个性化修改就要发挥天马行空的想象力啦。框架建立者曾留下一份指南README_CN.md，内有十几种修改方式，其他操作可参考网上教程。于我而言，我是想象自己要一个什么样的网站，再去寻找相应的教程。</p>
+                <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>建立一个属于自己的博客只需两步，博客框架+GitHub或服务器部署。并且搭建部署只需一次操作，后续工作基本就是优化网站内容<br><strong>搭建博客框架</strong><br>博客框架犹如一个仓库，一间房子，里面存放着知识和想法。在搭建完博客框架之后，后续的工作就是装修网站与添加知识。与其说搭建不如说下载，因为已经有很多优质的框架，只要下载即可，例如本文使用的hexo框架。<br><strong>部署</strong><br>如果博客网站未部署，则只能在本地上查看（如果把博客当成私人笔记本也可以不部署）。部署如同给仓库一个访问地址，可以在任意联网设备上访问。一般部署在GitHub上，因为不用钱呗。<br><strong>博客优化</strong><br>完成前面两步，剩下的工作就是对网站的个性化修改，以及添加内容。个性化修改就要发挥天马行空的想象力啦。框架建立者曾留下一份指南README_CN.md，内有十几种修改方式，其他操作可参考网上教程。于我而言，我是想象自己要一个什么样的网站，再去寻找相应的教程。</p>
 <h2 id="一、搭建、部署博客"><a href="#一、搭建、部署博客" class="headerlink" title="一、搭建、部署博客"></a>一、搭建、部署博客</h2><p>搭建node.js环境<br>-权限<br>-淘宝云：以后使用cnpm命令代替npm，下载速度快</p>
 <p>搭建git环境</p>
 <p>注册GitHub账号<br>ChenJiyang cjy990124<br>创建存储库</p>
@@ -505,7 +548,7 @@ layout: "categories"</code></pre>
     - name: Movies
       url: /movies
      icon: fas fa-film</code></pre>
-<h3 id="2-音乐"><a href="#2-音乐" class="headerlink" title="2.音乐"></a>2.音乐</h3><p>目前实现不了本地音乐歌单播放<br>如何实现不同文章对应不同音乐（在不同界面对应不同音乐）</p>
+<h3 id="2-音乐"><a href="#2-音乐" class="headerlink" title="2.音乐"></a>2.音乐</h3><p>在线不能播放vip音乐<br>目前实现不了本地音乐歌单播放<br>如何实现不同文章对应不同音乐（在不同界面对应不同音乐）</p>
 <h3 id="3-主题颜色"><a href="#3-主题颜色" class="headerlink" title="3.主题颜色"></a>3.主题颜色</h3><p>打开themes/matery/source/css/matery.css文件，大约在250行，有一个.bg-color属性，修改其属性值即可，代码如下：</p>
 <pre><code>.bg-color {
   background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%); //修改成自己喜欢的颜色值
@@ -526,6 +569,30 @@ color<span class="token operator">=</span><span class="token string">"122 103 23
 <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
 <p>其中：</p>
 <p>color：表示线条颜色，三个数字分别为(R,G,B)，默认：（0,0,0）<br>opacity：表示线条透明度（0~1），默认：0.5<br>count：表示线条的总数量，默认：150<br>zIndex：表示背景的z-index属性，css属性用于控制所在层的位置，默认：-1</p>
+<h3 id="7-修改社交链接"><a href="#7-修改社交链接" class="headerlink" title="7.修改社交链接"></a>7.修改社交链接</h3><p>1.在主题的 <code>_config.yml</code> 文件中，默认支持 <code>QQ</code>、<code>GitHub</code> 和邮箱等的配置，可以添加weixin<br>GitHub链接改为个人的主页链接<br>微信放上二维码图片（通过七牛云）<br>QQ和邮箱照常写</p>
+<p>2.在主题文件的 <code>/layout/_partial/social-link.ejs</code> 文件中，新增、修改你需要的社交链接地址，增加链接可参考如下代码，XXX如weixin：</p>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">if</span> <span class="token attr-name">(theme.socialLink.XXX)</span> <span class="token attr-name">{</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>&lt;%<span class="token punctuation">=</span> 点击时的跳转地址，如果是theme.socialLink.XXX，则跳到配置文件放的链接 %<span class="token punctuation">></span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tooltipped<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span> <span class="token attr-name">data-tooltip</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>鼠标放在图标时显示的话<span class="token punctuation">"</span></span> <span class="token attr-name">data-position</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>top<span class="token punctuation">"</span></span> <span class="token attr-name">data-delay</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>社交图标fab fa-XXX<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>%</span> <span class="token attr-name">}</span> <span class="token attr-name">%</span><span class="token punctuation">></span></span></code></pre>
+<p>其中，社交图标（如：<code>fa-github</code>）你可以在 <a target="_blank" rel="noopener" href="https://fontawesome.com/icons">Font Awesome</a> 中搜索找到。以下是常用社交图标的标识，供你参考：</p>
+<ul>
+<li>Facebook: <code>fab fa-facebook</code></li>
+<li>Twitter: <code>fab fa-twitter</code></li>
+<li>Google-plus: <code>fab fa-google-plus</code></li>
+<li>Linkedin: <code>fab fa-linkedin</code></li>
+<li>Tumblr: <code>fab fa-tumblr</code></li>
+<li>Medium: <code>fab fa-medium</code></li>
+<li>Slack: <code>fab fa-slack</code></li>
+<li>Sina Weibo: <code>fab fa-weibo</code></li>
+<li>Wechat: <code>fab fa-weixin</code></li>
+<li>QQ: <code>fab fa-qq</code></li>
+<li>Zhihu: <code>fab fa-zhihu</code></li>
+</ul>
+<blockquote>
+<p><strong>注意</strong>: 本主题中使用的 <code>Font Awesome</code> 版本为 <code>5.11.0</code>。</p>
+</blockquote>
 <h2 id="三、文章添加"><a href="#三、文章添加" class="headerlink" title="三、文章添加"></a>三、文章添加</h2><p>注：此部分照搬官方文档</p>
 <h3 id="Front-matter-选项详解"><a href="#Front-matter-选项详解" class="headerlink" title="Front-matter 选项详解"></a>Front-matter 选项详解</h3><p><code>Front-matter</code> 选项中的所有内容均为<strong>非必填</strong>的。但我仍然建议至少填写 <code>title</code> 和 <code>date</code> 的值。</p>
 <table>
@@ -643,6 +710,8 @@ color<span class="token operator">=</span><span class="token string">"122 103 23
   <span class="token punctuation">-</span> Typora
   <span class="token punctuation">-</span> Markdown
 <span class="token punctuation">---</span></code></pre>
+<p><strong>补充说明：img和coverimg路径有问题</strong><br><code>\themes\hexo-theme-matery-master\source</code>才是根目录，文档实例img路径应该是<code>/images/xxx.jpg</code></p>
+<p>我的做法是在<code>\source\medias</code>在新建一个专门存放文章图片的文件夹Article-picture<br>常用地址为<code>\medias\Article-picture\xxx.jpg</code></p>
 <h2 id="四、网站优化"><a href="#四、网站优化" class="headerlink" title="四、网站优化"></a>四、网站优化</h2><p>#注意事项<br>1.配置文件中的标点符号不要出现中文格式的标点符号，不然运行会出错。<br>2.例如index等文件有类似 tags: “”，冒号后面必加空格</p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2>
             </div>
@@ -884,7 +953,7 @@ color<span class="token operator">=</span><span class="token string">"122 103 23
                 <a href="/2020/10/19/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
-                        <img src="/%5C0.jpg" class="responsive-img" alt="博客搭建过程（草稿1）">
+                        <img src="/%5Cmedias%5CArticle-picture%5Ctext1.jpg" class="responsive-img" alt="博客搭建过程（草稿1）">
                         
                         <span class="card-title">博客搭建过程（草稿1）</span>
                     </div>
@@ -1171,23 +1240,25 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+    <a href="https://github.com/quiet-sheep" class="tooltipped" target="_blank" data-tooltip="来我GitHub么" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="http://qijnoccif.hn-bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201021170145.png?e=1603275401&amp;token=QrTK-la5GbjFgqKeuMLsdvtmqj42gnDwcIHeyWDv:gTT6GgoJSMBOlhTxOk44S60zbL4=" class="tooltipped" target="_blank" data-tooltip="加我微信么" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+
+
+
+    <a href="mailto:1406540120@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我: 1406540120@qq.com" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
 
 
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1406540120" class="tooltipped" target="_blank" data-tooltip="加我扣扣么" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1197,9 +1268,15 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 
 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
+
+
+
+
+
+
+
+
+
 
 </div>
     </div>
